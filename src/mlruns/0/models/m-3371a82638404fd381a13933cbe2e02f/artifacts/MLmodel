@@ -1,0 +1,23 @@
+artifact_path: /vf/users/IASEM/bhardwaja/CVProject/mlruns/0/models/m-3371a82638404fd381a13933cbe2e02f/artifacts
+flavors:
+  python_function:
+    config:
+      device: null
+    data: data
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.pytorch
+    pickle_module_name: mlflow.pytorch.pickle_module
+    python_version: 3.10.8
+  pytorch:
+    code: null
+    model_data: data
+    pytorch_version: 2.5.1+cu121
+mlflow_version: 3.7.0
+model_id: m-3371a82638404fd381a13933cbe2e02f
+model_size_bytes: 26378842
+model_uuid: m-3371a82638404fd381a13933cbe2e02f
+prompts: null
+run_id: aa065adccf0e45479186aec9b8f30774
+utc_time_created: '2025-12-08 21:55:23.365094'

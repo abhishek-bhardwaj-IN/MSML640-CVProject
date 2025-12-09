@@ -1,0 +1,93 @@
+2025-12-08 17:04:55 | DeepAlign                 | INFO     | ======================================================================
+2025-12-08 17:04:55 | DeepAlign                 | INFO     | DeepAlign-FIBSEM: Hemibrain Training Pipeline
+2025-12-08 17:04:55 | DeepAlign                 | INFO     | ======================================================================
+2025-12-08 17:04:55 | DeepAlign                 | INFO     | Configuration:
+2025-12-08 17:04:55 | DeepAlign                 | INFO     |   experiment_name: DeepAlign-FIBSEM-Hemibrain-v2
+2025-12-08 17:04:55 | DeepAlign                 | INFO     |   run_name: run_20251208_170455
+2025-12-08 17:04:55 | DeepAlign                 | INFO     |   device: cuda
+2025-12-08 17:04:55 | DeepAlign                 | INFO     |   mip_level: 2
+2025-12-08 17:04:55 | DeepAlign                 | INFO     |   vol_shape: (32, 96, 96)
+2025-12-08 17:04:55 | DeepAlign                 | INFO     |   hemibrain_roi: (4500, 5000, 5000)
+2025-12-08 17:04:55 | DeepAlign                 | INFO     |   batch_size: 10
+2025-12-08 17:04:55 | DeepAlign                 | INFO     |   learning_rate_ssl: 0.0002
+2025-12-08 17:04:55 | DeepAlign                 | INFO     |   learning_rate_reg: 0.0001
+2025-12-08 17:04:55 | DeepAlign                 | INFO     |   num_epochs_ssl: 150
+2025-12-08 17:04:55 | DeepAlign                 | INFO     |   num_epochs_registration: 90
+2025-12-08 17:04:55 | DeepAlign                 | INFO     |   num_training_samples: 1000
+2025-12-08 17:04:55 | DeepAlign                 | INFO     |   lambda_smooth: 0.5
+2025-12-08 17:04:55 | DeepAlign                 | INFO     |   lambda_feature: 0.3
+2025-12-08 17:04:55 | DeepAlign                 | INFO     |   lambda_intensity: 2.0
+2025-12-08 17:04:55 | DeepAlign                 | INFO     |   curtain_intensity: 0.35
+2025-12-08 17:04:55 | DeepAlign                 | INFO     |   charging_bias: 0.25
+2025-12-08 17:04:55 | DeepAlign                 | INFO     |   max_translation: 10
+2025-12-08 17:04:55 | DeepAlign                 | INFO     |   max_rotation: 2.0
+2025-12-08 17:04:55 | DeepAlign                 | INFO     |   ssl_features: [32, 64, 128]
+2025-12-08 17:04:55 | DeepAlign                 | INFO     |   reg_features: [32, 64, 128, 256]
+2025-12-08 17:04:55 | DeepAlign                 | INFO     |   num_test_pairs: 10
+2025-12-08 17:04:56 | DeepAlign.Pipeline        | INFO     | ✓ Device: cuda
+2025-12-08 17:04:56 | DeepAlign.Data            | INFO     | Connecting to Hemibrain...
+2025-12-08 17:04:57 | DeepAlign.Data            | INFO     | ✓ Connected! Shape: (np.int64(8607), np.int64(9932), np.int64(10349), np.int64(1))
+2025-12-08 17:04:57 | DeepAlign.MLflow          | INFO     | MLflow experiment: DeepAlign-FIBSEM-Hemibrain-v2
+2025-12-08 17:04:58 | DeepAlign.Pipeline        | INFO     | ======================================================================
+2025-12-08 17:04:58 | DeepAlign.Pipeline        | INFO     | STAGE 1: Artifact Removal Training
+2025-12-08 17:04:58 | DeepAlign.Pipeline        | INFO     | ======================================================================
+2025-12-08 17:05:06 | DeepAlign.Pipeline        | INFO     | Epoch   0 | Loss: 0.035131
+2025-12-08 17:05:25 | DeepAlign.Pipeline        | INFO     | Epoch   5 | Loss: 0.012458
+2025-12-08 17:05:40 | DeepAlign.Pipeline        | INFO     | Epoch  10 | Loss: 0.007581
+2025-12-08 17:05:56 | DeepAlign.Pipeline        | INFO     | Epoch  15 | Loss: 0.004371
+2025-12-08 17:06:11 | DeepAlign.Pipeline        | INFO     | Epoch  20 | Loss: 0.003035
+2025-12-08 17:06:26 | DeepAlign.Pipeline        | INFO     | Epoch  25 | Loss: 0.002302
+2025-12-08 17:06:41 | DeepAlign.Pipeline        | INFO     | Epoch  30 | Loss: 0.001978
+2025-12-08 17:06:56 | DeepAlign.Pipeline        | INFO     | Epoch  35 | Loss: 0.001734
+2025-12-08 17:07:11 | DeepAlign.Pipeline        | INFO     | Epoch  40 | Loss: 0.001809
+2025-12-08 17:07:26 | DeepAlign.Pipeline        | INFO     | Epoch  45 | Loss: 0.001265
+2025-12-08 17:07:41 | DeepAlign.Pipeline        | INFO     | Epoch  50 | Loss: 0.001106
+2025-12-08 17:07:56 | DeepAlign.Pipeline        | INFO     | Epoch  55 | Loss: 0.001032
+2025-12-08 17:08:11 | DeepAlign.Pipeline        | INFO     | Epoch  60 | Loss: 0.001026
+2025-12-08 17:08:26 | DeepAlign.Pipeline        | INFO     | Epoch  65 | Loss: 0.000918
+2025-12-08 17:08:41 | DeepAlign.Pipeline        | INFO     | Epoch  70 | Loss: 0.000950
+2025-12-08 17:08:56 | DeepAlign.Pipeline        | INFO     | Epoch  75 | Loss: 0.001003
+2025-12-08 17:09:11 | DeepAlign.Pipeline        | INFO     | Epoch  80 | Loss: 0.000823
+2025-12-08 17:09:26 | DeepAlign.Pipeline        | INFO     | Epoch  85 | Loss: 0.000918
+2025-12-08 17:09:41 | DeepAlign.Pipeline        | INFO     | Epoch  90 | Loss: 0.000624
+2025-12-08 17:09:56 | DeepAlign.Pipeline        | INFO     | Epoch  95 | Loss: 0.000723
+2025-12-08 17:10:12 | DeepAlign.Pipeline        | INFO     | Epoch 100 | Loss: 0.000761
+2025-12-08 17:10:27 | DeepAlign.Pipeline        | INFO     | Epoch 105 | Loss: 0.000631
+2025-12-08 17:10:42 | DeepAlign.Pipeline        | INFO     | Epoch 110 | Loss: 0.000649
+2025-12-08 17:10:57 | DeepAlign.Pipeline        | INFO     | Epoch 115 | Loss: 0.000627
+2025-12-08 17:11:12 | DeepAlign.Pipeline        | INFO     | Epoch 120 | Loss: 0.000544
+2025-12-08 17:11:27 | DeepAlign.Pipeline        | INFO     | Epoch 125 | Loss: 0.000665
+2025-12-08 17:11:42 | DeepAlign.Pipeline        | INFO     | Epoch 130 | Loss: 0.000515
+2025-12-08 17:11:57 | DeepAlign.Pipeline        | INFO     | Epoch 135 | Loss: 0.000566
+2025-12-08 17:12:12 | DeepAlign.Pipeline        | INFO     | Epoch 140 | Loss: 0.000485
+2025-12-08 17:12:27 | DeepAlign.Pipeline        | INFO     | Epoch 145 | Loss: 0.000543
+2025-12-08 17:12:39 | DeepAlign.Pipeline        | INFO     | ✓ SSL training complete
+2025-12-08 17:12:48 | DeepAlign.Pipeline        | INFO     | ======================================================================
+2025-12-08 17:12:48 | DeepAlign.Pipeline        | INFO     | STAGE 3: Registration Training
+2025-12-08 17:12:48 | DeepAlign.Pipeline        | INFO     | ======================================================================
+2025-12-08 17:12:55 | DeepAlign.Pipeline        | INFO     | Epoch   0 | Loss: 0.521779 | Improve: +1.63%
+2025-12-08 17:13:27 | DeepAlign.Pipeline        | INFO     | Epoch   5 | Loss: 0.448033 | Improve: +31.14%
+2025-12-08 17:14:00 | DeepAlign.Pipeline        | INFO     | Epoch  10 | Loss: 0.414863 | Improve: +43.08%
+2025-12-08 17:14:33 | DeepAlign.Pipeline        | INFO     | Epoch  15 | Loss: 0.402605 | Improve: +48.97%
+2025-12-08 17:15:05 | DeepAlign.Pipeline        | INFO     | Epoch  20 | Loss: 0.395585 | Improve: +52.04%
+2025-12-08 17:15:37 | DeepAlign.Pipeline        | INFO     | Epoch  25 | Loss: 0.376473 | Improve: +55.08%
+2025-12-08 17:16:10 | DeepAlign.Pipeline        | INFO     | Epoch  30 | Loss: 0.380103 | Improve: +55.95%
+2025-12-08 17:16:43 | DeepAlign.Pipeline        | INFO     | Epoch  35 | Loss: 0.391881 | Improve: +53.64%
+2025-12-08 17:17:15 | DeepAlign.Pipeline        | INFO     | Epoch  40 | Loss: 0.358617 | Improve: +58.41%
+2025-12-08 17:17:48 | DeepAlign.Pipeline        | INFO     | Epoch  45 | Loss: 0.347096 | Improve: +58.90%
+2025-12-08 17:18:21 | DeepAlign.Pipeline        | INFO     | Epoch  50 | Loss: 0.374388 | Improve: +58.29%
+2025-12-08 17:18:53 | DeepAlign.Pipeline        | INFO     | Epoch  55 | Loss: 0.371291 | Improve: +58.28%
+2025-12-08 17:19:27 | DeepAlign.Pipeline        | INFO     | Epoch  60 | Loss: 0.369993 | Improve: +57.43%
+2025-12-08 17:19:59 | DeepAlign.Pipeline        | INFO     | Epoch  65 | Loss: 0.377119 | Improve: +57.51%
+2025-12-08 17:20:32 | DeepAlign.Pipeline        | INFO     | Epoch  70 | Loss: 0.351903 | Improve: +57.25%
+2025-12-08 17:21:04 | DeepAlign.Pipeline        | INFO     | Epoch  75 | Loss: 0.365177 | Improve: +60.14%
+2025-12-08 17:21:37 | DeepAlign.Pipeline        | INFO     | Epoch  80 | Loss: 0.407420 | Improve: +55.06%
+2025-12-08 17:22:09 | DeepAlign.Pipeline        | INFO     | Epoch  85 | Loss: 0.364952 | Improve: +58.14%
+2025-12-08 17:22:35 | DeepAlign.Pipeline        | INFO     | ✓ Registration training complete
+2025-12-08 17:22:42 | DeepAlign.Pipeline        | INFO     | ======================================================================
+2025-12-08 17:22:42 | DeepAlign.Pipeline        | INFO     | EVALUATION
+2025-12-08 17:22:42 | DeepAlign.Pipeline        | INFO     | ======================================================================
+2025-12-08 17:34:03 | DeepAlign                 | INFO     | ======================================================================
+2025-12-08 17:34:03 | DeepAlign                 | INFO     | ✓ Pipeline Complete!
+2025-12-08 17:34:03 | DeepAlign                 | INFO     | Run 'mlflow ui' to view results at http://localhost:5000
+2025-12-08 17:34:03 | DeepAlign                 | INFO     | ======================================================================
